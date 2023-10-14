@@ -47,4 +47,9 @@ Run Automated Tests: ->
 4. The test results will be displayed in the "Run" tab at the bottom of Android Studio.
 
 
+## Sample Images Of APP UI
+
+<img src="https://github.com/Dev-Panwar/NeoBankUI/assets/136689689/29e55c8e-d0cc-4860-902e-4e5819ed4efb" width="200" height="400" alt="main page">
+<img src="https://github.com/Dev-Panwar/NeoBankUI/assets/136689689/3ba2a441-acb8-4c14-b3a1-15baea92a566" width="200" height="400" alt="drawer">
+<img src="https://github.com/Dev-Panwar/NeoBankUI/assets/136689689/a33884b7-18d2-487a-9a12-a0f3cf7322a9" width="200" height="400" alt="main2">
 
