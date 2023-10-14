@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+    <item android:id="@+id/Payments"
+        android:title="Payments"
+        android:icon="@drawable/baseline_checklist_rtl_24"
+        />
+
+    <item android:id="@+id/Expenses"
+        android:title="Expenses"
+        android:icon="@drawable/baseline_currency_rupee_24"
+        />
+
+    <item android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        />
+
+
+</menu>

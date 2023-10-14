@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_1"
+                style="@style/Colors_Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/account"
+                />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_2"
+                style="@style/Colors_Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/debit_card"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_3"
+                style="@style/Colors_Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loans"
+                />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ea5033"
+            android:elevation="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ef8c7c"
+                    android:layout_marginStart="20dp"
+                    app:cardCornerRadius="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_marginStart="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wallet Balance"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18dp"
+                            />
+                        <TextView
+                            android:id="@+id/wallet_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$321,500.00"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/upi_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPI: 21213334568@farmaxis"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/baseline_content_copy_24"
+                        />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Add money >"
+                    android:textAllCaps="false"
+                    android:background="@drawable/add_money_btn_ng"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="25dp"
+            >
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="fitXY"
+                android:padding="12dp"
+                android:src="@drawable/bank"
+                android:background="@drawable/custom_btn_bg"
+                android:elevation="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/qr_black"
+                android:background="@drawable/custom_btn_bg"
+                android:elevation="10dp"
+                android:layout_marginStart="40dp"
+                />
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_at"
+                android:background="@drawable/custom_btn_bg"
+                android:elevation="10dp"
+                android:layout_marginStart="40dp"
+                />
+
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/expenses"
+                android:scaleType="fitXY"
+                android:padding="14dp"
+                android:background="@drawable/custom_btn_bg"
+                android:elevation="10dp"
+                android:layout_marginStart="40dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="25dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b4b4b4"
+                android:text="   Bank\n Transfer"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b4b4b4"
+                android:text="    Scan\n QR Code"
+                android:layout_marginStart="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b4b4b4"
+                android:text="   UPI\nTransfer"
+                android:layout_marginStart="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b4b4b4"
+                android:text="   View\nExpenses"
+                android:layout_marginStart="40dp"
+                />
+
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Transactions"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_recent"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_recent_transaction"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payments Pending"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pending"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_pending_transaction"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
